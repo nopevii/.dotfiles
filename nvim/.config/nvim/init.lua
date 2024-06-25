@@ -173,8 +173,6 @@ require('lazy').setup {
             capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
             local servers = {
-                clangd = {},
-                gopls = {},
                 lua_ls = {
                     settings = {
                         Lua = {
@@ -191,7 +189,13 @@ require('lazy').setup {
             require('mason').setup {}
 
             local ensure_installed = vim.tbl_keys(servers or {})
-            vim.list_extend(ensure_installed, {})
+            vim.list_extend(ensure_installed, {
+                'clangd',
+                'gopls',
+                'rust_analyzer',
+                'bashls',
+                'shellcheck',
+            })
 
             require('mason-tool-installer').setup {
                 ensure_installed = ensure_installed,
