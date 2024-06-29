@@ -195,6 +195,11 @@ require('lazy').setup {
                 'rust_analyzer',
                 'bashls',
                 'shellcheck',
+                'dockerls',
+                'html',
+                'phpactor',
+                'jsonls',
+                'tsserver',
             })
 
             require('mason-tool-installer').setup {
