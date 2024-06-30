@@ -200,6 +200,7 @@ require('lazy').setup {
                 'phpactor',
                 'jsonls',
                 'tsserver',
+                'tailwindcss',
             })
 
             require('mason-tool-installer').setup {
