@@ -30,8 +30,9 @@ export PASSWORD_STORE_CLIP_TIME=15
 
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 
-export SQLITE_HISTORY=-
+export SQLITE_HISTORY="$XDG_CACHE_HOME/sqlite-history"
 export PSQL_HISTORY=-
+
 export LESSHISTFILE=-
 
 append_path () {
