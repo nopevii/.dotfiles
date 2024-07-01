@@ -108,7 +108,10 @@ require('lazy').setup {
         dependencies = {
             'nvim-lua/plenary.nvim',
             { 'nvim-telescope/telescope-ui-select.nvim' },
-            { 'nvim-tree/nvim-web-devicons',            enabled = vim.g.have_nerd_font },
+            {
+                'nvim-tree/nvim-web-devicons',
+                enabled = vim.g.have_nerd_font,
+            },
             {
                 'nvim-telescope/telescope-fzf-native.nvim',
                 build = 'make',
